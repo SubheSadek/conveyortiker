@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Conveyor Ticker</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/jquery.jConveyorTicker.min.css">
+    <style>
+        main {
+            margin: 0 0 15px 0;
+            padding: 27px 20px;
+            background: #f6f6f6;
+        }
+
+        main .js-conveyor-1 {
+            width: 100%;
+            white-space: nowrap;
+            overflow: hidden;
+            font-size: 0;
+            background: #fff;
+            border-radius: 3px;
+            box-shadow: inset 0 0 7px rgba(69, 78, 140, 0.5);
+        }
+        
+        .js-conveyor-1 ul li{
+            padding: 0 15px;
+            line-height: 35px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1 class="text-center text-info">jQuery Conveyor Ticker</h1>
+        </header>
+        <main>
+
+            <div class="js-conveyor-1">
+                <ul>
+                    <li>
+                        We are comming soon !!
+                    </li>
+                    <li>
+                        We are comming soon !!
+                    </li>
+                    <li>
+                        We are comming soon !!
+                    </li>
+                    <li>
+                        We are comming soon !!
+                    </li>
+                </ul>
+            </div>
+        </main>
+
+    </div>
+
+
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.jConveyorTicker.min.js"></script>
+    <script>
+        $(function () {
+            $('.js-conveyor-1').jConveyorTicker();
+        });
+    </script>
+</body>
+
+</html>
